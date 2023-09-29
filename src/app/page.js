@@ -1,3 +1,4 @@
+import Body from "@/components/Canvas";
 import Menu from "@/components/Menu";
 import ToolBar from "@/components/ToolBar";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <>
       <Menu />
       <ToolBar />
+      <Body />
     </>
   );
 }
