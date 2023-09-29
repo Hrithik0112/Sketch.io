@@ -7,7 +7,7 @@ import {
   faRotateRight,
   faFileArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
-import styles from "./Menu.module.css"; // Import the CSS module after the Font Awesome imports
+import styles from "./index.module.css"; // Import the CSS module after the Font Awesome imports
 
 const Menu = () => {
   return (
