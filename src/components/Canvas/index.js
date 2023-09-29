@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useEffect, useRef } from "react";
 const Body = () => {
   const canvasRef = useRef(null);

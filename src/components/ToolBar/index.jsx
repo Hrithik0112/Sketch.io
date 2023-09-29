@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./index.module.css";
 import { COLORS } from "@/constants";
+import { useSelector } from "react-redux";
 
 const ToolBar = () => {
+  const activeMenuItem = useSelector((state) => state.menu.activeMenuItem);
   return (
     <div className={styles.toolboxContainer}>
       <div className={styles.toolItem}>
@@ -17,7 +19,7 @@ const ToolBar = () => {
         </div>
       </div>
       <div className={styles.toolItem}>
-        <h4 className={styles.toolText}>Brush Size</h4>
+        <h4 className={styles.toolText}>Brush Size {activeMenuItem} </h4>
         <div className={styles.itemContainer}>
           <input type="range" min={1} max={10} step={1} />
         </div>
